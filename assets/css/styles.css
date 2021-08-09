@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  background-color: #3a0ca3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 10vh 0 50px 0;
+}
+
+.counter {
+  position: relative;
+  padding: 50px;
+  text-align: center;
+  background-color: #3a0ca3;
+  border-radius: 25% 10%;
+}
+
+.counter:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: #fff;
+  z-index: -1;
+}
+
+.counter:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: #fff;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+.counter:before, 
+.counter:after {
+  background: linear-gradient(235deg,#f72585,#3a0ca3,#4cc9f0);
+  border-radius: 25% 10%;
+}
+
+.title, 
+.output, 
+.operators {
+  padding: 15px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #3f37c9;
+}
+
+.output {
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.9);
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: #3a0ca3;
+  margin-bottom: 20px;
+  text-shadow: 1.5px 1.5px #3f37c9;
+  box-shadow: 3px 3px #3f37c9;
+}
+
+.operators {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.reset {
+  padding: 15px 50px 15px 50px;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #3a0ca3;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 28px 0 28px;
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #3a0ca3;
+  text-shadow: 1px 1px #3f37c9;
+  box-shadow: 3px 3px #3f37c9;
+}
+
+.subtraction:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 1px 1px #fff;
+}
+
+.sum:hover {
+  background-color: #f72585;
+  color: #fff;
+  box-shadow: 1px 1px #fff;
+}
+
+.reset:hover {
+  background: linear-gradient(235deg,#f72585,#3a0ca3,#4cc9f0);
+  color: #fff;
+  box-shadow: 1px 1px #fff;
+}
+
+.subtraction:active,
+.sum:active,
+.reset:active {
+  background: #fff;
+  color: #3a0ca3;
+  box-shadow: 3px 3px #3f37c9;
+}
+
+.note {
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #3f37c9;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #4cc9f0;
+  text-align: center;
+  text-shadow: 1px 1px #3f37c9;
+}
+
+a:hover {
+  color: #f72585;
+}
+
+a:active {
+  color: #4cc9f0;
+}
