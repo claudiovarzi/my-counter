@@ -26,7 +26,9 @@ Project created with:
 * JavaScript ES6
 
 ## Installation
-To run this project:
+To run this application follow this link:
+  https://claudiovarzi.github.io/my-counter/
+Or:
 * Clone this repository to your desktop.
 * Navigate to the top level of the directory.
 * Open index.html in your browser.
