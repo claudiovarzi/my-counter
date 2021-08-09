@@ -12,7 +12,7 @@
 9. [Contact Information](#contact_information)
 
 ## General Info
-This is my second project as a Web Developer, the first hardcoding Javascript.
+This is my second project as a Web Developer, the first with hardcoded Javascript.
 
 ## Description
 Space Counter is a simply counter application in which the user can increment by one,
